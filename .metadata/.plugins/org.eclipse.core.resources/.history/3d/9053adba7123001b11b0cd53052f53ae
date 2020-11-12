@@ -1,0 +1,17 @@
+package desisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercico1 {
+
+	public static void main(String[] args) {
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 1: "));
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero 2: "));
+		
+		String operacao = JOptionPane.showInputDialog("Escolha entre: (* ~ / ~ + ~ ou - )");
+		
+
+
+	}
+
+}

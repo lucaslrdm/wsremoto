@@ -1,0 +1,9 @@
+package br.com.formula1.implementacao;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+
+	}
+
+}

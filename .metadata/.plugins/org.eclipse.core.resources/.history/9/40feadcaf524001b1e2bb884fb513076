@@ -1,0 +1,9 @@
+package br.com.unixyz.beans;
+
+public class Professor {
+	private int id;
+	private String nome;
+	private String titulacao;
+	private Endereco endereco;
+
+}

@@ -1,0 +1,12 @@
+package br.com.unixyz.beans;
+import br.com.unixyz.beans.Endereco;
+
+public class Professor {
+	private int id;
+	private String nome;
+	private String titulacao;
+	private Endereco endereco;
+	
+	
+	
+}

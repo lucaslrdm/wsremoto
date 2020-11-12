@@ -1,0 +1,10 @@
+package br.com.ecommerce.beans;
+
+public class Venda {
+	private float total;
+	private String data;
+	private Cliente cliente; 
+	private Produto produto;
+	
+
+}

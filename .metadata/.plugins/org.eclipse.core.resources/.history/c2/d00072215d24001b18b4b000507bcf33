@@ -1,0 +1,9 @@
+package br.com.elevador.implementacao;
+
+public class TestaElevador {
+
+	public static void main(String[] args) {
+
+	}
+
+}

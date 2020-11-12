@@ -1,0 +1,30 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = Integer.parseInt(JOptionPane.showInputDialog("jogador 1 - Digite um numero: "));
+		int chute = 0;
+		int contador = 0;
+		
+		do {
+		chute = Integer.parseInt(JOptionPane.showInputDialog("jogador 2 - tente adivinhar o numero digitado: "));
+		if(chute > num) 
+			System.out.println("Você errou! o numero escolhido é maior");
+		
+		if(chute < num) 
+			System.out.println("Você errou! o numero escolhido é menor");
+		
+		if(contador >= 10)
+			System.out.printf("a diferença entre o numero escolhido e o ultimo digitado é de %d\n ", (num-chute));
+		
+		contador++;
+		}while(chute != num);
+		System.out.printf("Você acertou! apos %d tentativas",contador);
+		
+	}
+
+}

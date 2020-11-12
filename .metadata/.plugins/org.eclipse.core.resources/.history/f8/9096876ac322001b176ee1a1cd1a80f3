@@ -1,0 +1,14 @@
+package variaveis;
+
+public class ManipulaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String email = "tEsTe@testeDOtestE.com.br";
+		System.out.println("Origen-nal: "+email);
+		System.out.println("Menuscula: "+ email.toLowerCase());
+		System.out.println("Maior-uscula: "+ email.toUpperCase());
+
+	}
+
+}

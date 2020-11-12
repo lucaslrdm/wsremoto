@@ -1,0 +1,23 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano (maior q 1900 - menor 2002: "));
+		while(ano <1900 && ano > 2002)
+			 ano = Integer.parseInt(JOptionPane.showInputDialog("VC SABE LER? Digite o ano (maior q 1900 - menor 2002: "));
+
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia do mês: "));
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês do ano: "));
+
+			
+		}
+			
+
+	}
+
+

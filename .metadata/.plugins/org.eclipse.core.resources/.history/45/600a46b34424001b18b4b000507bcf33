@@ -1,0 +1,81 @@
+package br.com.formula1.modelo;
+
+public class Carro {
+	private String escuderia;
+	private short numero;
+	private String cor;
+	private float velocidadeAtual;
+	private float valor;
+	private boolean status;
+
+	public void setEscuderia(String escuderia) {
+		this.escuderia = escuderia.toUpperCase() + "vai filhao";
+	}
+
+	//gets e sets
+	public String getEscuderia() {
+		return escuderia;
+	}
+
+	public float getVelocidadeAtual() {
+		return velocidadeAtual;
+	}
+
+	public void setVelocidadeAtual(float velocidadeAtual) {
+		this.velocidadeAtual = velocidadeAtual;
+	}
+
+	public float getValorPromocao() {
+		return valor * (float) 0.9;
+	}
+
+	public void setValor(float valor) {
+		this.valor = valor;
+	}
+
+	public void setNumero(short numero) {
+		if(numero >0)
+			this.numero = numero;
+	}
+
+	public short getNumero() {
+		return numero;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+
+	public String ligar() {
+		status=true;
+		return "to ligado";
+	}
+	public String desligar() {
+		status=false;
+		return "ligadonom";
+	}
+	public void PreencherBasico(short numero, String escuderia, float valor) {
+	
+		this.numero = numero;
+		this.escuderia = escuderia;
+		this.valor = valor;
+		
+	}
+	
+	public void exibirTudo() {
+		System.out.println("NUMERO DO CARRO______: "+ numero);
+		System.out.println("ESCUDEIRA DO CARRO:__: "+ escuderia);
+		System.out.println("VALOR DO CARRO_______:" + valor);
+		System.out.println("STATUS DO CARRO_______:" + status);
+
+
+		
+	}
+
+}
+

@@ -1,0 +1,11 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.beans.Venda;
+
+public class ImplementaVenda {
+
+	public static void main(String[] args) {
+		Venda venda = new Venda();
+	}
+
+}

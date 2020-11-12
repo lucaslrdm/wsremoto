@@ -1,0 +1,23 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char resposta;
+		int num = Integer.parseInt(JOptionPane.showInputDialog("jogador 1 - Digite um numero: "));
+		int chute =0;
+		int contador = 0;
+		
+		do {
+		chute = Integer.parseInt(JOptionPane.showInputDialog("jogador 2 - tente adivinhar o numero digitado: "));
+		resposta = JOptionPane.showInputDialog("Digite S para continuar").toUpperCase().charAt(0);
+		contador++;
+		}while(resposta == 'S');
+		System.out.printf("Você acertou! apos %d tentativas",contador);
+		
+	}
+
+}

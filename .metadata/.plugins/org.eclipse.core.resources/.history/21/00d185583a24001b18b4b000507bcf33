@@ -1,0 +1,34 @@
+package br.com.formula1.modelo;
+
+public class Carro {
+	private String escuderia;
+	private short numero;
+	private String cor;
+	private float velocidadeAtual;
+	private float valor;
+	private boolean status;
+	
+	public void setEscuderia(String escuderia) {
+		this.escuderia = escuderia.toUpperCase() + "vai filhao";
+	}
+	
+	public String getEscuderia() {
+		return escuderia;
+	}
+	
+	public void setNumero(short numero) {
+		this.numero = numero;
+	}
+	
+	public short getNumero() {
+		return numero;
+	}
+	
+	public String ligar() {
+		return "ligado";
+	}
+	public String desligar() {
+		return "desligado";
+	}
+}
+
