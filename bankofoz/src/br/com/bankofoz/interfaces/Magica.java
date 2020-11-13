@@ -1,4 +1,4 @@
-package br.com.ecommerce.util;
+package br.com.bankofoz.interfaces;
 
 import javax.swing.JOptionPane;
 
@@ -9,6 +9,16 @@ public class Magica {
 	}
 	public static float f(String msg) {
 		return Float.parseFloat(s(msg));
+	}
+	
+	public static short sh(String msg) {
+		return Short.parseShort(s(msg));
+
+	}
+	
+	public static byte by(String msg) {
+		return Byte.parseByte(s(msg));
+
 	}
 	
 	public static int i(String msg) {

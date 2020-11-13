@@ -1,6 +1,8 @@
 package br.com.ecommerce.beans;
 
-public class Produto {
+import br.com.ecommerce.util.PadraoPrudoto;
+
+public class Produto implements PadraoPrudoto{
 	private String descricao;
 	private float valorVenda;
 	private float valorCompra;
@@ -65,4 +67,14 @@ public class Produto {
 				   "id:_____________:"+valorCompra+"\n"+
 				   "qtde:___________:"+qtde+"\n";
 }
+	@Override
+	public float retornarImposto() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public float ObterValorPromocao(float param) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
