@@ -3,9 +3,9 @@ import javax.swing.JOptionPane;
 
 public class Cliente {
 	private int id;
-	private String nome;
-	private String cpf;
-	private Endereco endereco;
+	private String nome = new String();
+	private String cpf = new String();
+	private Endereco endereco ;
 	
 	
 	public Cliente(int id, String nome, String cpf, Endereco endereco) {
