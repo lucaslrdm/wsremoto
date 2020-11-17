@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+
+    <!-- chamada para criar CSS-->
+    <style>
+
+    </style>
+
+    <!-- chamada para criar JS-->
+    <script>
+        //alert("Sejam bem vindos a Página de Java Script");
+        var nome = prompt("Sejam bem vindos, entre com o seu nome ");
+        alert("Muito prazer " + nome + " seja bem vindo a nossa página");
+
+        function mensagem() {
+            alert("Nossa " + nome + " como você é curioso");
+        }
+
+
+        function validar() {
+            var nome_formulario = formulario_cadastro.nome.value;
+            var senha_formulario = formulario_cadastro.senha.value;
+            var email_formulario= formulario_cadastro.email.value;
+
+            if (nome_formulario == "") {
+                alert("Preencha o campo obrigatório");
+                formulario_cadastro.nome.focus();
+                return false;
+            }
+
+            if (senha_formulario == "" || senha_formulario.length <= 5) {
+                alert("Preencha o campo senha, poiis é obrigatório, com o mínimo de 6 digitos");
+                formulario_cadastro.senha.focus();
+                return false;
+
+            }
+
+            if (email_formulario == ""  ) {
+                alert("Preencha o email");
+                formulario_cadastro.email.focus();
+                return false;
+            } else if(email_formulario.indexOf('@')==-1){
+                alert(" email cadastrado sem @");
+                formulario_cadastro.email.focus();
+                return false;
+            }
+
+
+            document.write("Muito obrigado " + nome_formulario + " logo entraremos em contato");
+        }
+
+     
+
+
+
+
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <form id="formulario_cadastro" method="POST">
+        Nome: <input type="text" name="nome"><br><br>
+        Senha: <input type="password" name="senha"><br><br>
+        Email: <input type="text" name="email">
+
+
+        <input type="submit" onclick=" return validar()" value="enviar">
+    </form><br><br>
+
+
+    <input type="button" onclick="mensagem()" value="Me click">
+
+
+</body>
+
+</html>
