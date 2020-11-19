@@ -16,8 +16,14 @@ public class MinhaExecao {
 			return "the number of the beast is invalido";
 			
 		}else if(e instanceof ArrayIndexOutOfBoundsException) {
-			return "Estourou no norte";
+			return "Array estourado";
+			
+		}else if(e instanceof RuntimeException) {
+			return "ERRO - VALOR NEGATIVO";
 		}
+
+		
+		
 		else {
 			e.getStackTrace();
 			return "\n vish";

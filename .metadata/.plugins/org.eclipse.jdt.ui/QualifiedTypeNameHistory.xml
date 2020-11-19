@@ -11,12 +11,10 @@
     <fullyQualifiedTypeName name="java.lang.Float"/>
     <fullyQualifiedTypeName name="br.com.ecommerce.beans.Endereco"/>
     <fullyQualifiedTypeName name="br.com.ecommerce.util.Magica"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="br.com.execoes.tratamento.MinhaExecao"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
@@ -28,9 +26,16 @@
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="br.com.colecoes.beans.Colaborador"/>
     <fullyQualifiedTypeName name="br.com.colecoes.util.Magica"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.colecoes.beans.Cargo"/>
     <fullyQualifiedTypeName name="br.com.colecoes.util.Puts"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="br.com.folhaPagamento.execao.MinhaExecao"/>
+    <fullyQualifiedTypeName name="br.com.folhaPagamento.util.Puts"/>
+    <fullyQualifiedTypeName name="br.com.folhaPagamento.beans.Funcionario"/>
+    <fullyQualifiedTypeName name="br.com.folhaPagamento.beans.Empreiteiro"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.folhaPagamento.beans.Horista"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>
