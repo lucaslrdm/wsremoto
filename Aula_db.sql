@@ -99,3 +99,4 @@ INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idate_cliente`,`email_c
 
 */
 
+select 1

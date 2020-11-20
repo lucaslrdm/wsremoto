@@ -235,7 +235,7 @@ ON(f.cod_cargo = c.cod_cargo)
 
 
 drop table itau.fucionario
-*/
+
 
 SELECT COUNT(*) as qtde_pessoas_cargo,c.nome_cargo
 FROM itau.cargo AS c
@@ -274,3 +274,4 @@ drop table itau.marcas;
 drop table itau.produtos;
 
 use bkp_tabelas
+*/
