@@ -20,6 +20,22 @@ public class ArtistaController {
 	@Autowired
 	private ArtistaDAO dao;
 	
+	@PostMapping("/novoartista")
+	public ResponseEntity<Artista> gravar(@RequestBody Artista objeto){
+		
+		try {
+			dao.save(objeto);
+
+			return ResponseEntity.ok(objeto);
+		}catch(Exception e){
+			e.printStackTrace();
+			return ResponseEntity.status(403).build();
+			
+		}
+	}
+	
+	
+	
 	//@PostMapping("/login")
 	
 	/*

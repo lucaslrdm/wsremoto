@@ -6,6 +6,8 @@ localweb - pag de hospedar pag web
 visual studiocode
 astah uml
 postman
+eclipse
+
 
 https://getbootstrap.com/ - baixar bootstrap
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -158,3 +160,11 @@ pgina de components - sites getbootstrap
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
+C:\Users\987282559\Desktop\turma11c\wsremoto\front\imagens\banner1.png
+
+https://github.com/humbertosousa/gama_material
+
+https://github.com/humbertosousa/wsremoto
