@@ -168,3 +168,17 @@ C:\Users\987282559\Desktop\turma11c\wsremoto\front\imagens\banner1.png
 https://github.com/humbertosousa/gama_material
 
 https://github.com/humbertosousa/wsremoto
+
+
+https://github.com/fernandowz/trabalhofinal
+
+
+git config --global user.name "lucas menezes"
+git config --global user.email "lucas-rdm@hotmail.com"
+
+git clone https://github.com/fernandowz/trabalhofinal
+
+git add. 
+git commit -m "trabalho final"
+
+git push
