@@ -6,7 +6,7 @@ http://www.torneseumprogramador.com.br/aulas/integracao-continua
 http://www.torneseumprogramador.com.br/aulas/cache
 http://www.torneseumprogramador.com.br/busca?q=bdd
 http://www.torneseumprogramador.com.br/busca?q=tdd
-
+ss
 
 :::: Serviços ::::
 https://heroku.com/
@@ -58,3 +58,31 @@ npm run bdd
 https://devcenter.heroku.com/articles/heroku-cli
 https://nodejs.org/en/download/
 https://www.jenkins.io/download/
+
+
+
+https://turma11c-itau-lucas.herokuapp.com/
+https://turma11c-itau-lucas.herokuapp.com/
+
+https://kitutes-donate-train-itau.herokuapp.com/
+
+https://site-web-vazio.herokuapp.com/
+
+tamplates bootstrap
+
+https://startbootstrap.com/themes
+
+
+postgres://xogocwcepffxci:49ba0080fa65a592e9f415a84605739f3023d5608646014a0a6610e0caa06978@ec2-54-157-66-140.compute-1.amazonaws.com:5432/d288g0h44n7t2l
+
+
+
+
+Server: sql10.freemysqlhosting.net
+Name: sql10378523
+Username: sql10378523
+PASSWORD: yKL8FsPUL6
+Port number: 3306
+
+
+spring.datasource.url = jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10378523?useTimezone=true&serverTimezone=UTC

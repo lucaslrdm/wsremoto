@@ -1,0 +1,14 @@
+{
+        "nomecli" : "teste",
+        "emailcli": "teste@teste",
+        "celularcli": "8888888888",
+        "dataagendamento": "2020-11-02",
+        "horaagendamento": "11:11",
+
+        
+        
+        agencia : {
+            "id" :1
+
+        }
+    }
