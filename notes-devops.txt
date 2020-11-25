@@ -1,0 +1,60 @@
+:::: Aulas ::::
+http://www.torneseumprogramador.com.br/
+http://www.torneseumprogramador.com.br/busca?q=deploy
+http://www.torneseumprogramador.com.br/aula?id=JiyKMqVfP1M&aula=20&tipo=back-end&professor=Danilo
+http://www.torneseumprogramador.com.br/aulas/integracao-continua
+http://www.torneseumprogramador.com.br/aulas/cache
+http://www.torneseumprogramador.com.br/busca?q=bdd
+http://www.torneseumprogramador.com.br/busca?q=tdd
+
+
+:::: Serviços ::::
+https://heroku.com/
+https://github.com/
+https://www.freemysqlhosting.net/
+
+
+:::: Projetos ::::
+https://github.com/Didox/turma11a-itau
+https://github.com/Didox/kitutes-donate-treinamento-itau
+https://github.com/Didox/app_um_minuto_cliente_produto
+https://github.com/Didox/validar-cpf-back-spring-boot
+https://github.com/Didox/validar-cpf-front-js-vanilla
+https://github.com/torneseumprogramador/projeto-itaumon-api-itau-java-spring
+https://github.com/torneseumprogramador/itaumonfront-spring-boot
+https://github.com/Didox/turma_devops
+
+
+:::::: Scripts :::::
+rake db:migrate
+git clone URL
+cd diretorio
+code .
+heroku login -i
+heroku create java-spring-danilo
+git push heroku master
+git push heroku main
+git add .
+git commit -am "criando rota"
+git push heroku master
+npm install
+npm start
+npm run tdd
+npm run bdd
+
+cd diretorio
+mkdir pasta1
+
+build > tdd > bdd > dev > homolog, prod
+git pull --force
+npm install
+npm run tdd
+START /B npm start 2>&1
+npm run bdd
+
+
+
+::::::: Downloads ::::::
+https://devcenter.heroku.com/articles/heroku-cli
+https://nodejs.org/en/download/
+https://www.jenkins.io/download/

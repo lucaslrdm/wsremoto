@@ -194,3 +194,6 @@ hostgator
 portal.azure
 
 heroku
+https://wordpad.cc/ProfRicardoBontempo
+https://wordpad.cc/turma11c
+
