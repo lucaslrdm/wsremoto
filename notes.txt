@@ -178,7 +178,19 @@ git config --global user.email "lucas-rdm@hotmail.com"
 
 git clone https://github.com/fernandowz/trabalhofinal
 
+cd trabalhofinal
+
 git add. 
 git commit -m "trabalho final"
 
 git push
+
+http://www.torneseumprogramador.com.br/
+
+
+hostgator
+
+
+portal.azure
+
+heroku
