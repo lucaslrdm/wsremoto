@@ -176,7 +176,7 @@ https://github.com/fernandowz/trabalhofinal
 git config --global user.name "lucas menezes"
 git config --global user.email "lucas-rdm@hotmail.com"
 
-git clone 
+git clone https://github.com/lucaslrdm/frontendjava
 https://github.com/fernandowz/trabalhofinal
 
 cd trabalhofinal

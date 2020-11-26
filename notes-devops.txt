@@ -24,6 +24,11 @@ https://github.com/torneseumprogramador/projeto-itaumon-api-itau-java-spring
 https://github.com/torneseumprogramador/itaumonfront-spring-boot
 https://github.com/Didox/turma_devops
 
+::::::: Downloads ::::::
+https://devcenter.heroku.com/articles/heroku-cli
+https://nodejs.org/en/download/
+https://www.jenkins.io/download/
+
 
 :::::: Scripts :::::
 rake db:migrate
@@ -86,3 +91,29 @@ Port number: 3306
 
 
 spring.datasource.url = jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10378523?useTimezone=true&serverTimezone=UTC
+
+
+cat .git/config
+
+ls .git
+criando uma aplicacao no heroku atraves do terminal, estando na pasta da aplicacao, iniciar a pasta como um projeto git                                                 
+
+comando:
+git init
+
+
+heroku create <nome aplicacao>
+
+
+dps
+git add .
+
+git commit -main
+
+git push heroku master:main
+
+rm .git
+
+ou rm -rf .git
+explorer .git - abrir pastas de arquivos
+
