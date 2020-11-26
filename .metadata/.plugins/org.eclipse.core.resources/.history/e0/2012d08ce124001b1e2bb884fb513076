@@ -1,9 +1,0 @@
-package br.com.unixyz.beans;
-
-public class Aluno {
-	private int rm;
-	private String nome;
-	private String email;
-
-
-}

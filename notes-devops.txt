@@ -62,7 +62,38 @@ npm run bdd
 ::::::: Downloads ::::::
 https://devcenter.heroku.com/articles/heroku-cli
 https://nodejs.org/en/download/
+
+para configuracao do jenkins - necessario alterar na pagina de serviços 
+a conta de usuário para login do aplicativo
+
+caminho: botao direito no serviço>propriedades> conta, esssa conta
 https://www.jenkins.io/download/
+
+comandos jenkins
+cd C:\Users\987282559\Desktop\turma11c\wsremoto\devops\turma_devops
+git pull --force
+
+
+cd C:\Users\987282559\Desktop\turma11c\wsremoto\devops\turma_devops
+npm run tdd
+
+
+cd C:\Users\987282559\Desktop\turma11c\wsremoto\devops\turma_devops
+START /B npm start 2>&1
+
+cd C:\Users\987282559\Desktop\turma11c\wsremoto\devops\turma_devops
+npm run bdd
+
+
+
+cd C:\Users\987282559\Desktop\turma11c\wsremoto\devops\turma_devops
+heroku git:remote -a dev-valida-cpf-lucas
+
+
+cd C:\Users\987282559\Desktop\turma11c\wsremoto\devops\turma_devops
+git push heroku master
+
+
 
 
 
@@ -117,3 +148,19 @@ rm .git
 ou rm -rf .git
 explorer .git - abrir pastas de arquivos
 
+
+
+________________________________
+
+comandos node js
+
+npm run tdd
+npm start
+npm run bad
+npm run bdd
+
+
+
+lucaslrdm/turma11a-itau
+
+tirado do arquivos
