@@ -1,0 +1,54 @@
+def plot_tree(crit, split, depth, min_samples_split, min_samples_leaf=0.2):
+    estimator = DecisionTreeClassifier(
+           random_state = 0 
+          ,criterion = crit
+          ,splitter = split
+          ,max_depth = depth
+          ,min_samples_split=min_samples_split
+          ,min_samples_leaf=min_samples_leaf
+    )
+    estimator.fit(X, y)
+    graph = Source(export_graphviz(estimator
+      , out_file=None
+      , feature_names=features_label
+      , class_names=class_label
+      , impurity=True
+      , filled = True))
+    display(SVG(graph.pipe(format='svg')))
+    return estimator
+
+inter=interactive(plot_tree 
+   , crit = ["gini", "entropy"]
+   , split = ["best", "random"]
+   , depth=[1,2,3,4,5,10,20,30]
+   , min_samples_split=(1,5)
+   , min_samples_leaf=(1,5))
+
+display(inter)
+
+rilson 
+
+pandas profilling
+
+tratado_bank_full.drop('job', inplace=True, axis=1)
+tratado_bank_full.drop('marital', inplace=True, axis=1)
+tratado_bank_full.drop('education', inplace=True, axis=1)
+tratado_bank_full.drop('default', inplace=True, axis=1)
+tratado_bank_full.drop('housing', inplace=True, axis=1)
+tratado_bank_full.drop('loan', inplace=True, axis=1)
+tratado_bank_full.drop('contact', inplace=True, axis=1)
+tratado_bank_full.drop('month', inplace=True, axis=1)
+tratado_bank_full.drop('poutcome', inplace=True, axis=1)
+tratado_bank_full.drop('y', inplace=True, axis=1)
+
+
+ 1   job        45211 non-null  object
+ 2   marital    45211 non-null  object
+ 3   education  45211 non-null  object
+ 4   default    45211 non-null  object
+ 6   housing    45211 non-null  object
+ 7   loan       45211 non-null  object
+ 8   contact    45211 non-null  object
+ 10  month      45211 non-null  object
+ 15  poutcome   45211 non-null  object
+ 16  y          45211 non-null  object

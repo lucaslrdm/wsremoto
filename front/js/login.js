@@ -19,7 +19,7 @@ function logar(){
             window.location="usuario.html"
         })
         .catch(err => {
-            window.alert("Deu ruim");
+            window.alert("Usuário/Senha invalidos");
         });
 
     }
@@ -47,3 +47,27 @@ function carregarartistas(){
 }
 
 
+function cadastrarusuario(){
+
+    var objeto = {
+        nome : document.getElementById("txtnome").value,
+        email : document.getElementById("txtemail").value,
+        senha : document.getElementById("txtsenha").value,
+        foto : document.getElementById("txtfoto").value
+
+    }
+
+    var cabecalho = {
+        method : "POST",
+        body : JSON.stringify(objeto),
+        headers : {
+            "Content-type" : "application/json"
+        }
+    }
+
+    fetch ("http://localhost:8080/cadastrousuario", cabecalho)
+        .then(res => res.json())
+        .then(res => {window.alert("Gravado com sucesso")})
+        .catch(err => {window.alert("ocorreu um erro")});
+
+}

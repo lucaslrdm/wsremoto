@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.finalproject.dao.UsuarioDAO;
+import br.com.finalproject.model.Artista;
 import br.com.finalproject.model.Usuario;
 
 @RestController
@@ -29,6 +30,21 @@ public class UsuarioController {
 		return ResponseEntity.ok(resposta);
 		
 	}
+	
+	@PostMapping("/cadastrousuario")
+	public ResponseEntity<Usuario> gravar(@RequestBody Usuario objeto){
+		
+		try {
+			dao.save(objeto);
+
+			return ResponseEntity.ok(objeto);
+		}catch(Exception e){
+			e.printStackTrace();
+			return ResponseEntity.status(403).build();
+			
+		}
+	}
+	
 	
 	@GetMapping("/usuarios")
 	public ResponseEntity<List<Usuario>> getAll(){

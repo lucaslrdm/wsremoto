@@ -1,0 +1,110 @@
+#instalacao e import de libs
+install.packages("readr")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("data.table")
+install.packages("psych")
+install.packages("Hmisc")
+
+
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(data.table)
+library(psych)
+
+
+
+#import e view da tabela
+autos <- read_csv("autos.csv")
+View(autos)
+
+#ajuste do nome das colunas
+names(autos) [17] <-c("engine.size")
+names(autos) [22] <-c("horsepower")
+names(autos) [24] <-c("city.mpg")
+
+# alteração do tipo da variável price e horsepower para numérico
+autos$price <- as.numeric(as.character(autos$price))
+autos$horsepower <- as.numeric(as.character(autos$horsepower))
+
+#ajuste - retirada de valores ausentes em price e horsepower
+ajust <- autos %>% filter(!is.na(price), !is.na(horsepower))
+
+# definição dos subconjuntos de cada modelo 
+
+## Modelo 1 - Modelo Univaridado
+varmodel1 <- subset(ajust, select = c("price", "horsepower"))
+## Modelo 2 - Modelo Multivariado
+varmodel2 <- subset(ajust, select = c("price", "horsepower","length", "engine.size", "city.mpg"))
+
+# MODELO 1 - UNIVARIADO
+
+#dicionário de Dados do Modelo 1
+
+str(varmodel1)
+summary (varmodel1)
+describe(varmodel1)
+
+str(varmodel1$price)
+summary(varmodel1$price)
+describe(varmodel1$price)
+
+str (varmodel1$horsepower)
+summary (varmodel1$horsepower)
+describe (varmodel1$horsepower)
+
+#gráficos - análise exploratória
+#histograma price
+hist(varmodel1$price, col="green", breaks=16)
+hist(varmodel1$horsepower, col="green", breaks=16)
+
+# boxplot price - horsepower
+boxplot(price ~ horsepower, data = varmodel1, col = "green")
+
+#Gráfico de Draftman
+pairs(varmodel1)
+
+# matriz de correlação de variáveis do modelo 1
+matriz_c <- cor(varmodel1)
+View(matriz_c)
+
+# modelo gerado através da função lm
+modelo1 <- lm (price ~ horsepower, data = varmodel1)
+View(modelo1)
+
+# sumario do modelo criado
+summary (modelo1)
+
+#validação eixo y - conforme grafico gerado é possivel afirmar que o modelo corta o eixo y
+plot(~varmodel1$price+varmodel1$horsepower, xlab="Price", ylab="Horsepower")
+abline(lm(varmodel1$horsepower~varmodel1$price), col="red")
+
+# ANÁLISE DO MODELO 2 - MULTIVARIADO
+# dicionário de Dados do Modelo 2
+
+str(varmodel2)
+summary (varmodel2)
+describe(varmodel2)
+
+#Gráfico de Draftman modelo 2
+pairs(varmodel2)
+
+#Matriz de correlação modelo 2
+matriz_c2 <- cor(varmodel2)
+View(matriz_c2)
+
+# modelo através da função lm
+modelo2 <- lm (price ~ horsepower + length + engine.size + city.mpg, data = varmodel2)
+View(modelo2)
+
+# sumario do modelo 2 
+summary (modelo2)
+
+# gerando modelo 3 atraves da funcao lm:
+modelo3 <- lm (price ~ horsepower + length + engine.size, data = varmodel2)
+View(modelo3)
+
+# sumario do modelo 3
+summary (modelo3)
+

@@ -176,8 +176,7 @@ https://github.com/fernandowz/trabalhofinal
 git config --global user.name "lucas menezes"
 git config --global user.email "lucas-rdm@hotmail.com"
 
-git clone https://github.com/lucaslrdm/frontendjava
-https://github.com/fernandowz/trabalhofinal
+git clone https://github.com/lucaslrdm/turma11a-itau
 
 cd trabalhofinal
 
@@ -198,3 +197,50 @@ heroku
 https://wordpad.cc/ProfRicardoBontempo
 https://wordpad.cc/turma11c
 
+
+		
+"nomeadvogado":"Andre Felipe"
+"loginadvogado":"felipe"
+"emailadvogado":"email@andre.com"
+"senhaadvogado":"mensa"
+"foto":"andre.png"
+"processos":{
+	"idprocesso":1
+}
+"clientes":{
+	"idcliente":1
+}
+
+
+
+{
+    "nomecliente" : "teste",
+    "emailcliente" : "testes",
+    "celularcliente" : "99999999",
+    "foto" : "foto",
+    "advogado":{
+	    "idadvogado":1
+    }
+
+}
+
+
+{
+    "celularcliente": "6666666",
+    "foto": "fototeste",
+    "processos": null,
+    "advogado": {
+		"idadvogado" : 1,
+		"nomeadvogado":"Andre Felipe",
+		"loginadvogado":"felipe",
+		"emailadvogado":"email@andre.com",
+		"senhaadvogado":"mensa",
+		"foto":"andre.png",
+		"processos":{
+			"idprocesso":null
+		}
+	},
+    "emailCliente": testes5,
+    "nomeCliente": testes3,
+    
+}

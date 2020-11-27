@@ -1,0 +1,133 @@
+package br.com.rvsadvogados.controller;
+
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.rvsadvogados.dao.ProcessosDAO;
+import br.com.rvsadvogados.model.Advogado;
+import br.com.rvsadvogados.model.Processos;
+
+@RestController
+@CrossOrigin("*")
+public class ProcessosController {
+	
+	@Autowired
+	private ProcessosDAO dao;
+	
+	
+	//public List<Processos> findByClienteIdcliente(int id);
+	@PostMapping("/relatorioporcliente")
+	public ResponseEntity<List<Processos>> getProcessoIdcliente(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByClienteIdcliente(objeto.getCliente().getIdCliente());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	//public List<Processos> findByDataabertura(Date dataabertura);
+	@PostMapping("/relatoriopordata")
+	public ResponseEntity<List<Processos>> getProcessoData(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByDataabertura(objeto.getDataAbertura());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	//public List<Processos> findByIdprocesso(int id);
+	@PostMapping("/relatorioporidprocesso")
+	public ResponseEntity<List<Processos>> getProcessoIdprocesso(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByIdprocesso(objeto.getIdprocesso());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	
+	@PostMapping("/novoprocesso")
+	public ResponseEntity<Processos> gravar(@RequestBody Processos objeto){
+		try {
+			dao.save(objeto);
+			return ResponseEntity.ok(objeto);
+		} catch(Exception e) {
+			e.printStackTrace();
+			return ResponseEntity.status(403).build();
+		}
+	}
+	
+	//public List<Processos> findByAdvogadoIdadvogado(int id);
+	@PostMapping("/relatorioporidadvogado")
+	public ResponseEntity<List<Processos>> getProcessoIdadvogado(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByAdvogadoIdadvogado(objeto.getAdvogado().getIdAdvogado());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	
+	@GetMapping("/listaprocessos")
+	public ResponseEntity<List<Processos>> getAll(){
+		List<Processos> lista = (List<Processos>) dao.findAll();
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+	}
+
+	//public List<Processos> findByClienteNomecliente(String nomecliente);
+	@PostMapping("/relatoriopornomecliente")
+	public ResponseEntity<List<Processos>> getProcessoNomecliente(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByClienteNomecliente(objeto.getCliente().getNomeCliente());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+
+	//public List<Processos> findByClienteIdclienteAndDataabertura(int id, Date dataabertura);
+	@PostMapping("/relatorioporidclientedataabertura")
+	public ResponseEntity<List<Processos>> getProcessoIdclienteDataabertura(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByClienteIdclienteAndDataabertura(objeto.getCliente().getIdCliente(), objeto.getDataAbertura());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	
+	//public List<Processos> findByClienteIdclienteAndClienteNomecliente(int id, String nomecliente);
+	@PostMapping("/relatorioporidclientenomecliente")
+	public ResponseEntity<List<Processos>> getProcessoIdclienteNomecliente(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByClienteIdclienteAndClienteNomecliente(objeto.getCliente().getIdCliente(), objeto.getCliente().getNomeCliente());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	
+	//public List<Processos> findByClienteNomeclienteAndDataabertura(String nomecliente, Date dataabertura);
+	@PostMapping("/relatoriopornomeclientedataabertura")
+	public ResponseEntity<List<Processos>> getProcessoNomeclienteDataabertura(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByClienteNomeclienteAndDataabertura(objeto.getCliente().getNomeCliente(), objeto.getDataAbertura());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+	
+	//public List<Processos> findByClienteIdclienteAndIdprocessoAndDataabertura(int id, int nomecli,Date dataabertura);
+	@PostMapping("/relatorioporidclienteidprocessodataabertura")
+	public ResponseEntity<List<Processos>> getProcessoIdclienteIdprocessoDataabertura(@RequestBody Processos objeto){
+		List<Processos> lista = dao.findByClienteIdclienteAndIdprocessoAndDataabertura(objeto.getCliente().getIdCliente(), objeto.getIdprocesso(), objeto.getDataAbertura());
+		if(lista.size()==0) return ResponseEntity.status(404).build();
+		return ResponseEntity.ok(lista);
+		
+	}
+
+
+
+}

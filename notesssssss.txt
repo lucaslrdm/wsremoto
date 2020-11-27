@@ -1,0 +1,82 @@
+TRILHA 3 – DESENVOLVIMENTO DO DIAGNÓSTICO
+OBJETIVOS DA TRILHA:
+a. Como aprofundar a coleta dos dados de um problema?
+b. Discutir os meios para analisar, avaliar e diagnosticar os efeitos e as causas de
+um problema.
+c. Como apresentar o diagnóstico?
+Observe que, nesta trilha, foram apresentados vários materiais cuja leitura será
+extremamente útil para o desenvolvimento de seu projeto. No template do TAC com
+Orientações, existem várias informações a respeito do diagnóstico de um problema,
+incluindo diversas possibilidades de pesquisa as quais você pode aproveitar em seu
+projeto.
+Na etapa inicial do projeto, você recebeu o desafio de buscar dois problemas na
+empresa os quais podem ser estudados com maior profundidade. Então, naquela etapa
+do desafio, você levantou as seguintes informações:
+1) Descrição do desafio (apresente o detalhamento do desafio, ou seja, o que você
+pretende desenvolver em seu projeto e a relevância para a empresa – utilize
+evidências, sempre que possível).
+2) Justificativa (demonstre a importância em solucionar o desafio, quais benefícios
+– tempo, custo, imagem etc.).
+Nesta etapa do projeto, você deve aprofundar a coleta de dados para que possa
+efetuar um diagnóstico mais preciso do problema. É importante salientar que todo
+material já coletado será muito útil, no entanto, é necessário explorar ainda mais o
+problema que você selecionou para trabalhar no TAC.
+Lembre-se: Utilize as referências de leitura e não se esqueça de citá-las no trabalho.
+Observe cuidadosamente cada etapa a seguir.
+COLETAR DADOS MAIS PRECISOS DE UM PROBLEMA
+Um problema pode ser observado de diversas maneiras, ou seja, do ponto de
+vista de quem executa uma atividade, de quem recebe aquele produto ou serviço ou
+daquele que paga por tudo isso.
+No template TAC Orientações, foram apresentados diversos exemplos de
+pesquisas as quais você pode utilizar para dar credibilidade ao projeto.
+ANALISAR OS DADOS COLETADOS
+De posse dos dados e das informações coletados no item anterior, faz-se
+necessário analisar um pouco mais esta coleta e, para isso, deve-se utilizar os seguintes
+critérios:
+Quantificação
+Verificar se os dados coletados são representativos do problema. Observar se as
+quantidades de dados obtidos são suficientes para efetuar a avaliação do problema.
+Pouca quantidade de dados ou curtos períodos de coleta de dados podem mascarar a
+causa do problema.
+Confiabilidade
+Certificar-se de que as fontes de coleta são confiáveis e que os dados podem ser
+rastreados.
+Qualificação
+Analisar se os dados e as informações coletadas possuem a qualidade necessária para
+não interferir nas fases seguintes. Entenda por “qualificação dos dados”, a exatidão
+deles.
+Este exercício de análise dos dados e das informações, em geral, leva bastante tempo,
+por isso, nessa trilha, você terá duas semanas para trabalhar em seu projeto. Não se
+esqueça de que o professor orientador responderá aos fóruns de dúvidas e,
+semanalmente, fará os chats.
+AVALIAR CAUSAS E EFEITOS DO PROBLEMA
+A última etapa do diagnóstico consiste na avaliação da(s) causa(s) e dos efeitos
+provocados pelo problema. Existem muitas ferramentas para analisar as causas dos
+problemas, logo, você deve buscar a alternativa mais viável ou até mesmo juntar mais
+ferramentas para se certificar da causa raiz do problema.
+Atenção: a causa raiz (ou primária) é aquela que precisa ser eliminada para a
+solução definitiva do problema. Causas secundárias podem mascarar a real causa do
+problema, portanto, tome cuidado. Também é possível que existam mais de uma causa
+raiz, mas, se você chegar a uma delas, já será suficiente para o desenvolvimento do
+projeto.
+Lembrando algumas ferramentas para análise de causa:
+ Diagrama de causa e efeito (Ishikawa, Espinha de peixe)
+ Árvore de falhas
+ 5 porquês
+ Pareto
+ Histograma etc.
+Para finalizar o diagnóstico, será necessário identificar os efeitos dos problemas.
+Muitas vezes, um problema traz consigo algumas oportunidades que podem ser
+enxergadas positivamente.
+APRESENTAÇÃO AO PROFESSOR
+Lembre-se de que, a cada entrega, é importante que haja uma revisão na etapa
+anterior, evitando duplicidade ou conflitos de informações. As correções sempre serão
+necessárias.
+Observe atentamente as orientações, o número mínimo e máximo de páginas
+desta seção, conforme definido no template.
+ORIENTAÇÕES FINAIS DA TRILHA 3
+Apresente, no prazo estipulado, o Diagnóstico do Problema, ou seja, refine ainda
+mais as análises realizadas quando você pesquisou sobre os desafios de pesquisa.
+Não se esqueça de que o diagnóstico completo envolve a coleta, análise e
+avaliação da causa do problema.
+

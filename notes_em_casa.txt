@@ -1,0 +1,27 @@
+cols(
+  .default = col_double(),
+  `State Code` = col_character(),
+  `County Code` = col_character(),
+  `Site Num` = col_character(),
+  Datum = col_character(),
+  `Parameter Name` = col_character(),
+  `Sample Duration` = col_character(),
+  `Pollutant Standard` = col_character(),
+  `Metric Used` = col_character(),
+  `Method Name` = col_character(),
+  `Units of Measure` = col_character(),
+  `Event Type` = col_character(),
+  `Completeness Indicator` = col_character(),
+  `Certification Indicator` = col_character(),
+  `1st Max DateTime` = col_datetime(format = ""),
+  `2nd Max DateTime` = col_datetime(format = ""),
+  `3rd Max DateTime` = col_datetime(format = ""),
+  `4th Max DateTime` = col_datetime(format = ""),
+  `1st NO Max DateTime` = col_datetime(format = ""),
+  `2nd NO Max DateTime` = col_datetime(format = ""),
+  `Local Site Name` = col_character()
+  # ... with 6 more columns
+)
+
+State
+

@@ -1,0 +1,27 @@
+email azure
+mirian.oliroc
+y34b8ccw
+
+BigData#123
+
+https://meet.google.com/cyw-gtam-nxy
+
+dados <- mtcars
+dados
+
+cor(dados)
+
+install.packages("car")
+install.packages("effects")
+library(car)
+library(effects)
+
+scatterplotMatrix(dados,main="Scatter Plot Matrix")
+
+fit <- lm(mpg ~ hp + wt + hp:wt, data=dados)
+
+summary(fit)
+
+plot(fit)
+
+symboling,normalized-losses,make,fuel-type,aspiration,num-of-doors,body-style,drive-wheels,engine-location,wheel-base,length,width,height,curb-weight,engine-type,num-of-cylinders,engine-size,fuel-system,bore,stroke,compression-ratio,horse-power,peak-rpm,city-mpg,highway-mpg,price
