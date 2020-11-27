@@ -25,22 +25,27 @@ public class AdvogadoController {
 	@PostMapping("/loginemail")
 	public ResponseEntity<Advogado> logar(@RequestBody Advogado objeto){
 		
-		Advogado advogado = dao.findByEmailadvogadoAndSenhaadvogado(objeto.getEmailAdvogado(), objeto.getSenhaAdvogado());
+		Advogado advogado = dao.findByEmailAndSenha(objeto.getEmailAdvogado(), objeto.getSenhaAdvogado());
 		
 		if(advogado==null) return ResponseEntity.status(404).build();
 		
 		return ResponseEntity.ok(advogado);
 	}
 	
-	@PostMapping("/loginracf")
-	public ResponseEntity<Advogado> logarRacf(@RequestBody Advogado objeto){
+	@PostMapping("/loginusuario")
+	public ResponseEntity<Advogado> logarUsuario(@RequestBody Advogado objeto){
 		
-		Advogado gerente = dao.findByLoginadvogadoAndSenhaadvogado(objeto.getLoginAdvogado(), objeto.getSenhaAdvogado());
+		Advogado advogado = dao.findByLoginAndSenha(objeto.getLoginAdvogado(), objeto.getSenhaAdvogado());
+
+		if(advogado==null) {
 		
-		if(gerente==null) return ResponseEntity.status(404).build();
+			return ResponseEntity.status(405).build();}
 		
-		return ResponseEntity.ok(gerente);
+		return ResponseEntity.ok(advogado);
 	}
+	
+
+	
 	
 	@GetMapping("/listaadvogados")
 	public ResponseEntity<List<Advogado>> getAll(){

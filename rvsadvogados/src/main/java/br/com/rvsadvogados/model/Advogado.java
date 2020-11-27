@@ -25,14 +25,14 @@ public class Advogado {
 	@Column(name="nomeadvogado",length=50)
 	private String nomeadvogado;
 	
-	@Column(name="loginadvogado",length=10)
-	private String loginadvogado;
+	@Column(name="login",length=10)
+	private String login;
 	
-	@Column(name="emailadvogado",length=80)
-	private String emailadvogado;
+	@Column(name="email",length=80)
+	private String email;
 	
-	@Column(name="senhaadvogado",length=20)
-	private String senhaadvogado;
+	@Column(name="senha",length=20)
+	private String senha;
 	
 	
 	@Column(name="foto",length=100)
@@ -46,7 +46,9 @@ public class Advogado {
 	@JsonIgnoreProperties("advogado")
 	private List<Cliente> clientes;
 	
-	
+	@OneToMany(mappedBy="advogado", cascade=CascadeType.ALL)
+	@JsonIgnoreProperties("advogado")
+	private List<Logs> logs;
 
 	public Advogado() {
 		super();
@@ -59,9 +61,9 @@ public class Advogado {
 		super();
 		this.idadvogado = idadvogado;
 		this.nomeadvogado = nomeadvogado;
-		this.loginadvogado = loginadvogado;
-		this.emailadvogado = emailadvogado;
-		this.senhaadvogado = senhaadvogado;
+		this.login = loginadvogado;
+		this.email = emailadvogado;
+		this.senha = senhaadvogado;
 		this.foto = foto;
 		this.processos = processos;
 		this.clientes = clientes;
@@ -86,27 +88,27 @@ public class Advogado {
 	}
 
 	public String getLoginAdvogado() {
-		return loginadvogado;
+		return login;
 	}
 
 	public void setLoginAdvogado(String loginAdvogado) {
-		this.loginadvogado = loginAdvogado;
+		this.login = loginAdvogado;
 	}
 
 	public String getEmailAdvogado() {
-		return emailadvogado;
+		return email;
 	}
 
 	public void setEmailAdvogado(String emailAdvogado) {
-		this.emailadvogado = emailAdvogado;
+		this.email = emailAdvogado;
 	}
 
 	public String getSenhaAdvogado() {
-		return senhaadvogado;
+		return senha;
 	}
 
 	public void setSenhaAdvogado(String senhaAdvogado) {
-		this.senhaadvogado = senhaAdvogado;
+		this.senha = senhaAdvogado;
 	}
 
 	public String getFoto() {

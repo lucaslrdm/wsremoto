@@ -3,13 +3,16 @@ package br.com.rvsadvogados.model;
 
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -27,12 +30,59 @@ public class Processos {
 	private int idprocesso;
 
 	
-	@Column(name="dataabertura")
+	public List<Logs> getLogs() {
+		return logs;
+	}
+
+
+
+
+	public void setLogs(List<Logs> logs) {
+		this.logs = logs;
+	}
+
+
+
+	@Column(name="dtinicio")
 	@Temporal(TemporalType.DATE)
 	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
-	private Date dataabertura;
+	private Date dtinicio;
 	
+	
+	@OneToMany(mappedBy="processos", cascade=CascadeType.ALL)
+	@JsonIgnoreProperties("processos")
+	private List<Logs> logs;
 
+	
+	@Column
+	(name="tipoacao",length=100)
+	private String tipoacao;
+	
+	//nome da parte contraria
+	@Column
+	(name="nomecon",length=100)
+	private String nomecon;
+	
+	//nome da parte numero principal
+	@Column
+	(name="nprincipal",length=100)
+	private String nprincipal;
+	
+	@Column
+	(name="orgao",length=100)
+	private String orgao;
+	
+	@Column
+	(name="natureza",length=100)
+	private String natureza;
+	
+	/*
+	@Column
+	(name="log",length=100)
+	private List<String> log;*/
+	
+	
+	
 	
 	@ManyToOne
 	@JsonIgnoreProperties("processos")
@@ -51,13 +101,16 @@ public class Processos {
 
 
 
-
-
-
-	public Processos(int idprocesso, Date dataAbertura, Cliente cliente, Advogado advogado) {
+	public Processos(int idprocesso, Date dtinicio, String tipoacao, String nomecon,
+			String nprincipal, String orgao, String natureza, Cliente cliente, Advogado advogado) {
 		super();
 		this.idprocesso = idprocesso;
-		this.dataabertura = dataAbertura;
+		this.dtinicio = dtinicio;
+		this.tipoacao = tipoacao;
+		this.nomecon = nomecon;
+		this.nprincipal = nprincipal;
+		this.orgao = orgao;
+		this.natureza = natureza;
 		this.cliente = cliente;
 		this.advogado = advogado;
 	}
@@ -65,6 +118,92 @@ public class Processos {
 
 
 
+
+
+
+
+
+
+	public String getTipoacao() {
+		return tipoacao;
+	}
+
+
+
+
+	public void setTipoacao(String tipoacao) {
+		this.tipoacao = tipoacao;
+	}
+
+
+
+
+	public String getNomecon() {
+		return nomecon;
+	}
+
+
+
+
+	public void setNomecon(String nomecon) {
+		this.nomecon = nomecon;
+	}
+
+
+
+
+	public String getNprincipal() {
+		return nprincipal;
+	}
+
+
+
+
+	public void setNprincipal(String nprincipal) {
+		this.nprincipal = nprincipal;
+	}
+
+
+
+
+	public String getOrgao() {
+		return orgao;
+	}
+
+
+
+
+	public void setOrgao(String orgao) {
+		this.orgao = orgao;
+	}
+
+
+
+
+	public String getNatureza() {
+		return natureza;
+	}
+
+
+
+
+	public void setNatureza(String natureza) {
+		this.natureza = natureza;
+	}
+
+
+
+
+	public Date getDataabertura() {
+		return dtinicio;
+	}
+
+
+
+
+	public void setDataabertura(Date dataabertura) {
+		this.dtinicio = dataabertura;
+	}
 
 
 
@@ -81,13 +220,13 @@ public class Processos {
 
 
 	public Date getDataAbertura() {
-		return dataabertura;
+		return dtinicio;
 	}
 
 
 
 	public void setDataAbertura(Date dataAbertura) {
-		this.dataabertura = dataAbertura;
+		this.dtinicio = dataAbertura;
 	}
 
 

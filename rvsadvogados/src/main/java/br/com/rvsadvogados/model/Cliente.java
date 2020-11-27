@@ -18,19 +18,19 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name="TB_CLIENTE")
 public class Cliente {
 	
-	@Column(name="idcliente")
+	@Column(name="idcli")
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int idcliente;
+	private int idcli;
 	
-	@Column(name="nomecliente",length=50)
-	private String nomecliente;
+	@Column(name="nomecli",length=50)
+	private String nomecli;
 	
-	@Column(name="emailcliente",length=80)
-	private String emailcliente;
+	@Column(name="emailcli",length=80)
+	private String emailcli;
 	
-	@Column(name="celularcliente", length=15)
-	private String celularcliente;
+	@Column(name="celcli", length=15)
+	private String celcli;
 
 	@Column(name="foto",length=100)
 	private String foto;
@@ -49,79 +49,77 @@ public class Cliente {
 	}
 
 
-	
-
-
-
-	public Cliente(int idcliente, String nomecliente, String emailcliente, String celularcliente, String foto,
-			List<Processos> processos, Advogado advogado) {
+	public Cliente(int idcli, String nomecli, String emailcli, String celcli, String foto, List<Processos> processos,
+			Advogado advogado) {
 		super();
-		this.idcliente = idcliente;
-		this.nomecliente = nomecliente;
-		this.emailcliente = emailcliente;
-		this.celularcliente = celularcliente;
+		this.idcli = idcli;
+		this.nomecli = nomecli;
+		this.emailcli = emailcli;
+		this.celcli = celcli;
 		this.foto = foto;
 		this.processos = processos;
 		this.advogado = advogado;
 	}
 
 
-
-
-
-
-	public int getIdCliente() {
-		return idcliente;
+	public int getIdcli() {
+		return idcli;
 	}
 
-	public void setIdCliente(int idCliente) {
-		this.idcliente = idCliente;
+
+	public void setIdcli(int idcli) {
+		this.idcli = idcli;
 	}
 
-	public String getNomeCliente() {
-		return nomecliente;
+
+	public String getNomecli() {
+		return nomecli;
 	}
 
-	public void setNomeCliente(String nomeCliente) {
-		this.nomecliente = nomeCliente;
+
+	public void setNomecli(String nomecli) {
+		this.nomecli = nomecli;
 	}
 
-	public String getEmailCliente() {
-		return emailcliente;
+
+	public String getEmailcli() {
+		return emailcli;
 	}
 
-	public void setEmailCliente(String emailCliente) {
-		this.emailcliente = emailCliente;
+
+	public void setEmailcli(String emailcli) {
+		this.emailcli = emailcli;
 	}
+
+
+	public String getCelcli() {
+		return celcli;
+	}
+
+
+	public void setCelcli(String celcli) {
+		this.celcli = celcli;
+	}
+
 
 	public String getFoto() {
 		return foto;
 	}
 
+
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
+
 
 	public List<Processos> getProcessos() {
 		return processos;
 	}
 
+
 	public void setProcessos(List<Processos> processos) {
 		this.processos = processos;
 	}
-
-
-
-	public String getCelularcliente() {
-		return celularcliente;
-	}
-
-
-
-	public void setCelularcliente(String celularcliente) {
-		this.celularcliente = celularcliente;
-	}
-
 
 
 	public Advogado getAdvogado() {
@@ -129,11 +127,13 @@ public class Cliente {
 	}
 
 
-
-
 	public void setAdvogado(Advogado advogado) {
 		this.advogado = advogado;
 	}
+
+
+	
+
 	
 	
 	

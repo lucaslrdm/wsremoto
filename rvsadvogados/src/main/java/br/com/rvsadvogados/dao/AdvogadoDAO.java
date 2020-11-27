@@ -19,8 +19,9 @@ import br.com.rvsadvogados.model.Processos;
 
 public interface AdvogadoDAO extends CrudRepository<Advogado,Integer>{
 	
-	public Advogado findByEmailadvogadoAndSenhaadvogado(String email, String senha);
-	public Advogado findByLoginadvogadoAndSenhaadvogado(String loginadvogado, String senha);
+	public Advogado findByEmailAndSenha(String email, String senha);
+	public Advogado findByLoginAndSenha(String loginadvogado, String senha);
+
 	//public Advogado findByClienteIdcliente(int idcliente);
 	public Advogado findByProcessosIdprocesso(int idprocesso);
 	

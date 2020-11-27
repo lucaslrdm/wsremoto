@@ -10,8 +10,8 @@ import br.com.rvsadvogados.model.Processos;
 
 public interface ClienteDAO extends CrudRepository<Cliente, Integer>{
 	
-	public List<Cliente> findByIdcliente(int id);
-	public List<Cliente> findByNomecliente(String nomecliente);
+	public List<Cliente> findByIdcli(int id);
+	public List<Cliente> findByNomecli(String nomecliente);
 	public List<Cliente> findByProcessosIdprocesso(int idprocesso);
 	public List<Cliente> findByAdvogadoIdadvogado(int idadvogado);
 

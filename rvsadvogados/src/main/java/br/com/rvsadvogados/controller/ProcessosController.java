@@ -27,7 +27,7 @@ public class ProcessosController {
 	//public List<Processos> findByClienteIdcliente(int id);
 	@PostMapping("/relatorioporcliente")
 	public ResponseEntity<List<Processos>> getProcessoIdcliente(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByClienteIdcliente(objeto.getCliente().getIdCliente());
+		List<Processos> lista = dao.findByClienteIdcli(objeto.getCliente().getIdcli());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
@@ -36,7 +36,7 @@ public class ProcessosController {
 	//public List<Processos> findByDataabertura(Date dataabertura);
 	@PostMapping("/relatoriopordata")
 	public ResponseEntity<List<Processos>> getProcessoData(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByDataabertura(objeto.getDataAbertura());
+		List<Processos> lista = dao.findByDtinicio(objeto.getDataAbertura());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
@@ -83,7 +83,7 @@ public class ProcessosController {
 	//public List<Processos> findByClienteNomecliente(String nomecliente);
 	@PostMapping("/relatoriopornomecliente")
 	public ResponseEntity<List<Processos>> getProcessoNomecliente(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByClienteNomecliente(objeto.getCliente().getNomeCliente());
+		List<Processos> lista = dao.findByClienteNomecli(objeto.getCliente().getNomecli());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
@@ -93,7 +93,7 @@ public class ProcessosController {
 	//public List<Processos> findByClienteIdclienteAndDataabertura(int id, Date dataabertura);
 	@PostMapping("/relatorioporidclientedataabertura")
 	public ResponseEntity<List<Processos>> getProcessoIdclienteDataabertura(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByClienteIdclienteAndDataabertura(objeto.getCliente().getIdCliente(), objeto.getDataAbertura());
+		List<Processos> lista = dao.findByClienteIdcliAndDtinicio(objeto.getCliente().getIdcli(), objeto.getDataAbertura());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
@@ -103,7 +103,7 @@ public class ProcessosController {
 	//public List<Processos> findByClienteIdclienteAndClienteNomecliente(int id, String nomecliente);
 	@PostMapping("/relatorioporidclientenomecliente")
 	public ResponseEntity<List<Processos>> getProcessoIdclienteNomecliente(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByClienteIdclienteAndClienteNomecliente(objeto.getCliente().getIdCliente(), objeto.getCliente().getNomeCliente());
+		List<Processos> lista = dao.findByClienteIdcliAndClienteNomecli(objeto.getCliente().getIdcli(), objeto.getCliente().getNomecli());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
@@ -113,7 +113,7 @@ public class ProcessosController {
 	//public List<Processos> findByClienteNomeclienteAndDataabertura(String nomecliente, Date dataabertura);
 	@PostMapping("/relatoriopornomeclientedataabertura")
 	public ResponseEntity<List<Processos>> getProcessoNomeclienteDataabertura(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByClienteNomeclienteAndDataabertura(objeto.getCliente().getNomeCliente(), objeto.getDataAbertura());
+		List<Processos> lista = dao.findByClienteNomecliAndDtinicio(objeto.getCliente().getNomecli(), objeto.getDataAbertura());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
@@ -122,7 +122,7 @@ public class ProcessosController {
 	//public List<Processos> findByClienteIdclienteAndIdprocessoAndDataabertura(int id, int nomecli,Date dataabertura);
 	@PostMapping("/relatorioporidclienteidprocessodataabertura")
 	public ResponseEntity<List<Processos>> getProcessoIdclienteIdprocessoDataabertura(@RequestBody Processos objeto){
-		List<Processos> lista = dao.findByClienteIdclienteAndIdprocessoAndDataabertura(objeto.getCliente().getIdCliente(), objeto.getIdprocesso(), objeto.getDataAbertura());
+		List<Processos> lista = dao.findByClienteIdcliAndIdprocessoAndDtinicio(objeto.getCliente().getIdcli(), objeto.getIdprocesso(), objeto.getDataAbertura());
 		if(lista.size()==0) return ResponseEntity.status(404).build();
 		return ResponseEntity.ok(lista);
 		
