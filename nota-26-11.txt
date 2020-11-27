@@ -7,3 +7,7 @@
 git clone git@github.com:lucaslrdm/frontendjava
 
 git remote add upstream git@github.com:lucaslrdm/frontendjava
+
+https://frontend-projetofinal1.herokuapp.com/logingerente.html
+
+https://frontend-gama.herokuapp.com/agendamentocliente.html

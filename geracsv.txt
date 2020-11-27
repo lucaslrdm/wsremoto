@@ -1,0 +1,16 @@
+function gerarcsv(){
+
+for (cont=0;cont<lista.length;cont++){
+        saida+=
+        "<tr>" +
+        "<td>" + lista[cont].agencia.nomeAgencia + "</td>" + 
+        "<td>" + lista[cont].nomecli + "</td>" + 
+        "<td>" + lista[cont].dataagendamento + "</td>" + 
+        "</tr>";
+
+
+    }
+	
+}
+
+https://frontend-gama.herokuapp.com/agendamentocliente.html
